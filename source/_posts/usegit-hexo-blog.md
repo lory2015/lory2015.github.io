@@ -2,6 +2,7 @@
 title: git hexo blog
 date: 2016-05-01 14:41:19
 tags: [git, hexo, blog]
+description: "多台电脑同写一个gitblog"
 ---
 
 先github创建一个库名为lory2015.github.io， github它规定了此命名方式
