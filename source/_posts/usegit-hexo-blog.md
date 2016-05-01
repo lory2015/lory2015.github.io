@@ -38,18 +38,20 @@ deploy:
   branch: master
 就可以方便的使用 hexo g  -d 生成和部署博客
 
-##建好后hexo写博客## Quick Start
+##建好后hexo写博客Quick Start
 
 ### Create a new post
 
 ``` bash
 $ hexo new "My New Post"
+16：08现在在desktop上 write blog
 ```
-title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中
-date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改
-categories: example #分类
-tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格
-description: 附加一段文章摘要，字数最好在140字以内。
+ssh git@github.com
+hexo d 就不会有 host key的报错了  github 里的SSH里对应电脑的SHH钥匙会变亮了。
+最后把变化更新备份到例外一个blog库里
+git add .
+git commit -m "this new change for blog"
+git push -u origin master
 
 
 
