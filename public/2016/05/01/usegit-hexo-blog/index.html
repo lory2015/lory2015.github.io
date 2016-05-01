@@ -5,16 +5,16 @@
   
   <title>git hexo blog | Tlory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下12345echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.com:lory201">
+  <meta name="description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下123456789101112echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git hexo blog">
 <meta property="og:url" content="http://yoursite.com/2016/05/01/usegit-hexo-blog/index.html">
 <meta property="og:site_name" content="Tlory">
-<meta property="og:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下12345echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.com:lory201">
-<meta property="og:updated_time" content="2016-05-01T07:25:38.276Z">
+<meta property="og:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下123456789101112echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.c">
+<meta property="og:updated_time" content="2016-05-01T08:09:05.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git hexo blog">
-<meta name="twitter:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下12345echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.com:lory201">
+<meta name="twitter:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下123456789101112echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.c">
   
     <link rel="alternative" href="/atom.xml" title="Tlory" type="application/atom+xml">
   
@@ -269,12 +269,12 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>先github创建一个库名为lory2015.github.io， github它规定了此命名方式<br>命令终端里建立库作为博客用<a href="https://github.com/lory2015/aaaaa" target="_blank" rel="external">如下</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"# aaaaa"</span> &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line"> git remote add origin git@github.com:lory2015.github.io</span><br></pre></td></tr></table></figure></p>
+        <p>先github创建一个库名为lory2015.github.io， github它规定了此命名方式<br>命令终端里建立库作为博客用<a href="https://github.com/lory2015/aaaaa" target="_blank" rel="external">如下</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"# aaaaa"</span> &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line"> git remote add origin git@github.com:lory2015.github.io</span><br><span class="line"> <span class="keyword">if</span></span><br><span class="line">  fatal: remote origin already exists. </span><br><span class="line"> first</span><br><span class="line">  git remote rm origin</span><br><span class="line">  <span class="keyword">then</span> </span><br><span class="line"> git remote add origin git@github.com:lory2015.github.io</span><br><span class="line"> git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>输入用户和密码 开始上传add内容如果上传整个文件的 add . 其它一样。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>在_config.yam里修改添加<br>deploy:<br>  type: git<br>  repo: git@github.com:lory2015/lory2015.github.io.git<br>  branch: master<br>就可以方便的使用 hexo g  -d 生成和部署博客</p>
 <p>##建好后hexo写博客## Quick Start</p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories: example #分类<br>tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格<br>description: 附加一段文章摘要，字数最好在140字以内。</p>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">16：08现在在desktop上 write blog</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -286,7 +286,7 @@
         <p><span>Title:</span><a href="/2016/05/01/usegit-hexo-blog/">git hexo blog</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">lorybaby</a></p>
         <p><span>Created:</span>2016-05-01, 14:41:19</p>
-        <p><span>Updated:</span>2016-05-01, 15:25:38</p>
+        <p><span>Updated:</span>2016-05-01, 16:09:05</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2016/05/01/usegit-hexo-blog/" title="git hexo blog">http://yoursite.com/2016/05/01/usegit-hexo-blog/</a>
             <span class="copy-path" data-clipboard-text="From http://yoursite.com/2016/05/01/usegit-hexo-blog/　　By lorybaby" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
