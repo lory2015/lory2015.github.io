@@ -21,6 +21,12 @@ git commit -m "first commit"
  git push -u origin master
 ```
 输入用户和密码 开始上传add内容如果上传整个文件的 add . 其它一样。
+git add .
+git commit -m "folder now"
+git remote add origin git@github.com:lory2015.github.io
+git push -u origin master
+第3可以省略如果报错了
+接着用其它电脑就可以 git clone git@github.com:lory2015.github.io到电脑本地接着写同一个博客
 
 ``` bash
 npm install hexo-deployer-git --save
