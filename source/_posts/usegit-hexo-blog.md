@@ -40,4 +40,8 @@ deploy:
 $ hexo new "My New Post"
 16：08现在在desktop上 write blog
 ```
+ssh git@github.com
+hexo d 就不会有 host key的报错了
+
+
 
