@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/05/01/usegit-hexo-blog/index.html">
 <meta property="og:site_name" content="Tlory">
 <meta property="og:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下123456789101112echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.c">
-<meta property="og:updated_time" content="2016-05-01T08:47:06.542Z">
+<meta property="og:updated_time" content="2016-05-01T09:37:18.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git hexo blog">
 <meta name="twitter:description" content="先github创建一个库名为lory2015.github.io， github它规定了此命名方式命令终端里建立库作为博客用如下123456789101112echo &quot;# aaaaa&quot; &amp;gt;&amp;gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot; git remote add origin git@github.c">
@@ -270,12 +270,14 @@
       
           
         <p>先github创建一个库名为lory2015.github.io， github它规定了此命名方式<br>命令终端里建立库作为博客用<a href="https://github.com/lory2015/aaaaa" target="_blank" rel="external">如下</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"# aaaaa"</span> &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line"> git remote add origin git@github.com:lory2015.github.io</span><br><span class="line"> <span class="keyword">if</span></span><br><span class="line">  fatal: remote origin already exists. </span><br><span class="line"> first</span><br><span class="line">  git remote rm origin</span><br><span class="line">  <span class="keyword">then</span> </span><br><span class="line"> git remote add origin git@github.com:lory2015.github.io</span><br><span class="line"> git push -u origin master</span><br></pre></td></tr></table></figure></p>
-<p>输入用户和密码 开始上传add内容如果上传整个文件的 add . 其它一样。</p>
+<p>输入用户和密码 开始上传add内容如果上传整个文件的 add . 其它一样。<br>git add .<br>git commit -m “folder now”<br>git remote add origin git@github.com:lory2015.github.io<br>git push -u origin master<br>第3可以省略如果报错了<br>接着用其它电脑就可以 git clone git@github.com:lory2015.github.io到电脑本地接着写同一个博客</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>在_config.yam里修改添加<br>deploy:<br>  type: git<br>  repo: git@github.com:lory2015/lory2015.github.io.git<br>  branch: master<br>就可以方便的使用 hexo g  -d 生成和部署博客</p>
 <p>##建好后hexo写博客Quick Start</p>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">16：08现在在desktop上 write blog</span><br></pre></td></tr></table></figure>
 <p>ssh git@github.com<br>hexo d 就不会有 host key的报错了  github 里的SSH里对应电脑的SHH钥匙会变亮了。<br>最后把变化更新备份到例外一个blog库里<br>git add .<br>git commit -m “this new change for blog”<br>git push -u origin master</p>
+<p>台式机写博客，先执行下面一种把笔记的更新合并到本地<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">down vote</span><br><span class="line">One approach is to commit that file first <span class="keyword">then</span> pull.</span><br><span class="line"></span><br><span class="line">git add filename</span><br><span class="line">git commit </span><br><span class="line">//enter your commit message and save </span><br><span class="line">git pull </span><br><span class="line"></span><br><span class="line">Another approach is stash your changes <span class="keyword">then</span> pull. Then apply stash.</span><br><span class="line"></span><br><span class="line">git stash</span><br><span class="line">git pull</span><br><span class="line">git stash apply stash@&#123;0&#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后台式电脑写好博客 hexo g -d </p>
 
       
     </div>
@@ -287,7 +289,7 @@
         <p><span>本文标题:</span><a href="/2016/05/01/usegit-hexo-blog/">git hexo blog</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">lorybaby</a></p>
         <p><span>发布时间:</span>2016-05-01, 14:41:19</p>
-        <p><span>最后更新:</span>2016-05-01, 16:47:06</p>
+        <p><span>最后更新:</span>2016-05-01, 17:37:18</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/01/usegit-hexo-blog/" title="git hexo blog">http://yoursite.com/2016/05/01/usegit-hexo-blog/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/05/01/usegit-hexo-blog/　　作者: lorybaby" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

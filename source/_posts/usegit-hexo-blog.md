@@ -53,5 +53,20 @@ git add .
 git commit -m "this new change for blog"
 git push -u origin master
 
+台式机写博客，先执行下面一种把笔记的更新合并到本地
+``` bash
+down vote
+One approach is to commit that file first then pull.
 
+git add filename
+git commit 
+//enter your commit message and save 
+git pull 
 
+Another approach is stash your changes then pull. Then apply stash.
+
+git stash
+git pull
+git stash apply stash@{0}
+```
+然后台式电脑写好博客 hexo g -d 
