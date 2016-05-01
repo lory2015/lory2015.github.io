@@ -32,7 +32,7 @@ deploy:
   branch: master
 就可以方便的使用 hexo g  -d 生成和部署博客
 
-##建好后hexo写博客## Quick Start
+##建好后hexo写博客Quick Start
 
 ### Create a new post
 
@@ -41,7 +41,11 @@ $ hexo new "My New Post"
 16：08现在在desktop上 write blog
 ```
 ssh git@github.com
-hexo d 就不会有 host key的报错了
+hexo d 就不会有 host key的报错了  github 里的SSH里对应电脑的SHH钥匙会变亮了。
+最后把变化更新备份到例外一个blog库里
+git add .
+git commit -m "this new change for blog"
+git push -u origin master
 
 
 
